@@ -52,14 +52,14 @@
           <span class="gradient-text">décisions mesurables.</span>
         </h1>
         <p class="hero-subtitle">
-          Finissant en informatique, profil sciences des données, je conçois des solutions concrètes
+          Bachelier en informatique, profil sciences des données, je conçois des solutions concrètes
           en automatisation, visualisation et analyse de données — avec une expérience réelle en entreprise.
         </p>
 
         <div class="hero-actions">
           <a href="#case-study" class="btn btn-primary">Voir mon projet principal</a>
           <a href="#contact" class="btn btn-secondary">Me contacter</a>
-          <a href="CV - Abdoul Daouda Faye  Data Analyst.pdf" class="btn btn-ghost">Télécharger CV</a>
+          <a href="CV_Abdoul_Daouda_Faye.pdf" class="btn btn-ghost">Télécharger CV</a>
         </div>
 
         <div class="hero-metrics">
@@ -107,7 +107,7 @@
       <span>MongoDB</span>
       <span>Machine Learning</span>
       <span>YOLOv8</span>
-      <span>Flask</span>
+      <span>Next.js</span>
       <span>Streamlit</span>
     </section>
 
@@ -287,7 +287,7 @@
     <section id="projects" class="section projects">
       <div class="section-heading reveal">
         <p class="eyebrow">Autres projets</p>
-        <h2>Data science, vision par ordinateur, bases de données et web.</h2>
+        <h2>Des projets en ligne, avec leur code et leurs résultats.</h2>
       </div>
 
       <div class="filters reveal">
@@ -299,24 +299,51 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card reveal" data-category="ai">
-          <div class="card-icon">🚗</div>
-          <h3>Détection de véhicules avec YOLOv8</h3>
+        <article class="project-card reveal" data-category="data web">
+          <div class="card-icon">🧹</div>
+          <h3>Décrasse — nettoyage de fichiers Excel et CSV</h3>
           <p>
-            Application de vision par ordinateur pour détecter les voitures, compter les véhicules,
-            visualiser les classes et analyser les résultats via une interface web.
+            Outil web qui repère la vraie ligne d’en-tête, type chaque colonne, uniformise les variantes
+            d’écriture, retire les doublons et produit un classeur Excel avec le journal des corrections.
+            Traitement entièrement dans le navigateur ; 12 tests automatisés.
           </p>
-          <div class="tags"><span>YOLOv8</span><span>Python</span><span>Flask</span><span>Streamlit</span></div>
+          <p><a href="https://decrasse.onrender.com">Voir l’outil</a> · <a href="https://github.com/abdoul-web/decrasse">Code</a></p>
+          <div class="tags"><span>JavaScript</span><span>Node.js</span><span>Qualité des données</span></div>
         </article>
 
-        <article class="project-card reveal" data-category="ai data">
-          <div class="card-icon">❤️</div>
-          <h3>Prédiction de maladies cardiovasculaires</h3>
+        <article class="project-card reveal" data-category="web database">
+          <div class="card-icon">🔧</div>
+          <h3>Garage Eurolux — site transactionnel pour un client réel</h3>
           <p>
-            Pipeline complet : nettoyage, préparation, classification, métriques, analyse du modèle
-            et interprétation des résultats.
+            Site d’un garage de Trois-Rivières : boutique avec paiement Stripe, prise de rendez-vous avec suivi,
+            espace administrateur et tableau de bord de statistiques. Base relationnelle de 11 tables ;
+            40 tests automatisés.
           </p>
-          <div class="tags"><span>Python</span><span>ML</span><span>F1-score</span><span>ROC-AUC</span></div>
+          <p><a href="https://garage-eurolux.onrender.com">Voir le site</a></p>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>SQLite</span><span>Stripe</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai data database">
+          <div class="card-icon">❤️</div>
+          <h3>Prédiction du risque patient</h3>
+          <p>
+            Pipeline scikit-learn entraîné sur 701 dossiers étiquetés : régression logistique et forêt aléatoire
+            comparées en validation croisée à 5 plis (ROC-AUC moyen de 0,93). Modèle servi par API REST
+            dans une application Express / MongoDB.
+          </p>
+          <p><a href="https://github.com/abdoul-web/projet-nodejs">Code</a></p>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>Node.js</span><span>MongoDB</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="card-icon">🚗</div>
+          <h3>Détection de voitures avec YOLOv8</h3>
+          <p>
+            Application Streamlit qui applique un modèle YOLOv8 préentraîné : image annotée, coordonnées
+            des détections et répartition des classes.
+          </p>
+          <p><a href="https://github.com/abdoul-web/YOLO8_VOITURE_STREAMLIT">Code</a></p>
+          <div class="tags"><span>YOLOv8</span><span>Python</span><span>Streamlit</span></div>
         </article>
 
         <article class="project-card reveal" data-category="database data">
@@ -327,36 +354,6 @@
             de données semi-structurées.
           </p>
           <div class="tags"><span>MongoDB</span><span>MQL</span><span>NoSQL</span><span>Kaggle</span></div>
-        </article>
-
-        <article class="project-card reveal" data-category="web">
-          <div class="card-icon">🌐</div>
-          <h3>Site web fonctionnel avec logique métier</h3>
-          <p>
-            Développement d’un site web avec interfaces, logique applicative et gestion de données,
-            orienté besoin métier concret.
-          </p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Backend</span></div>
-        </article>
-
-        <article class="project-card reveal" data-category="data">
-          <div class="card-icon">📊</div>
-          <h3>Dashboards et analyse décisionnelle</h3>
-          <p>
-            Création de visualisations, indicateurs et tableaux de bord pour faciliter la compréhension
-            et la prise de décision.
-          </p>
-          <div class="tags"><span>Power BI</span><span>Power Query</span><span>Excel</span></div>
-        </article>
-
-        <article class="project-card reveal" data-category="web ai">
-          <div class="card-icon">🧠</div>
-          <h3>Applications web de détection intelligente</h3>
-          <p>
-            Interfaces Flask/Streamlit pour l’analyse d’images, l’historique des résultats et la visualisation
-            des prédictions.
-          </p>
-          <div class="tags"><span>Flask</span><span>Streamlit</span><span>Computer Vision</span></div>
         </article>
       </div>
     </section>
@@ -403,7 +400,7 @@
         <p class="eyebrow">À propos</p>
         <h2>Un profil orienté impact, pas seulement outils.</h2>
         <p>
-          Je suis finissant en informatique, profil sciences des données à l’Université du Québec à Trois-Rivières.
+          Je suis bachelier en informatique, profil sciences des données, de l’Université du Québec à Trois-Rivières (2026).
           Mon parcours m’a permis de travailler sur des projets en business intelligence, automatisation,
           machine learning, computer vision et bases de données.
         </p>

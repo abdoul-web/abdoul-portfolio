@@ -521,6 +521,7 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 
 .project-card h3 { font-size: 1.3rem; }
 .project-card p { font-size: 0.94rem; }
+.project-card p a { color: var(--text); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .tags span {
